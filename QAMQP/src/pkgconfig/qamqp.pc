@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qamqp
+
+
+Name: Qamqp
+Description: Qamqp Plugin
+Version: 1.0.0
+Libs: -lqamqp 
+Libs.private: /usr/lib/x86_64-linux-gnu/libQt5Network.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lpthread    
+Cflags: -DQAMQP_SHARED -I${includedir}
+
